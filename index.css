@@ -1,0 +1,237 @@
+                /*以下線的code*/
+                .line{
+                        border-bottom: 5px #EEB4B4 solid;
+                        width: 100%;
+                        height: 2px;
+                        margin-left: auto;
+                        margin-right: auto;
+                }
+                /*以下*/
+
+                /*以下書頁*/
+                .clearbox{
+                    padding: 0;
+                }
+                .clearbox_li{
+                    border: 1px #DDDDDD solid;
+                    list-style-type: none;
+                    background-image: url(image/roomin.png);
+                    width: 100%;
+                    position: relative;
+                    font-family: 微軟正黑體,新細明體,標楷體;
+                }
+                .clearbox_txt{
+                    text-align: center;
+                    opacity: 1;
+                    background-color: white;
+                    display: inline-block;
+                    overflow: visible;
+                    width: 100%;
+                    height: auto;
+                }
+                .clearbox_txt img{
+                    width: 100%;
+                    height: ;
+                }
+                .clearbox_txt h1{
+                    color: black;
+                    font-size: 3vmin;
+                    font-weight: 600;
+                }
+                .clearbox_txt p{
+                    color: #AAAAAA;
+                    font-size: 16px;
+                }
+                .clearbox img{
+                    width: 100%;
+                }
+                .clearbox_link{
+                    top: 20%;
+                    position: absolute;
+                    opacity: 0;
+                    overflow: hidden;
+                    color: saddlebrown;
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                }
+                .clearbox_link h3{
+                    font-size: 3vmin;
+                    color:saddlebrown;
+
+                }
+                .clearbox_link h4{
+                    font-size: 1vmin;
+                    padding: 12px;
+                }
+                .clearbox_link p{
+                    border-top: 1px saddlebrown dashed;
+                    padding-top: 30px;
+                    font-size: 2vmin;
+                    letter-spacing: 10px;
+                }
+                .clearbox_li:hover>.clearbox_txt{
+                    opacity: 0;
+                    transition: all 1.2s ease;
+                }
+                .clearbox_li:hover>.clearbox_link{
+                    opacity: 1;
+                    overflow: visible;
+                    transition: all 1s ease;
+                }
+                
+                /*以上書頁*/
+                /*以下紅樓之美*/
+                .navbar_box{
+                    text-align: center;
+                    font-size: 5vmin;
+                    color: #222;
+                    margin-top: 80px;
+                    margin-bottom: 80px;
+                }
+                .navbar_box_line{
+                    border-bottom: 2px #EEB4B4 solid;
+                    width: 50%;
+                    height: 2px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .navbar_box_line2{
+                    border-top: 2px #EEB4B4 solid;
+                    width: 60%;
+                    height: 2px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .navbar_box_text{
+                    letter-spacing: 62px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    color:	#EEB4B4;
+                    font-family: 微軟正黑體,新細明體,標楷體;
+                }
+                /*以上紅樓之美*/
+                
+                /*以下是NEWS的CSS*/
+                .news{
+                    width: 100%;
+                    height: auto;
+                    font-family: 微軟正黑體,新細明體,標楷體;
+                    background-color: #EEB4B4;
+                    display: inline-block;
+                }
+                .news_h1{
+                    font-size: 48px;
+                    color: white !important;
+                    padding-left: 0px;
+                    width: 80%;
+                    
+                }
+                .news_h2{
+                    width: 20%;
+                    display: inline-block;
+                }
+                .news_h1:after{
+                    content: "最新消息";
+                    font-size: 24px;
+                    color: white;
+                }
+
+                /*以上NEWS CSS*/
+                /*以下banner CSS*/
+                .news_text_line{
+                    border-top: 2px #ffffff solid;
+                    width: 100%;
+                    height: 2px;
+                    margin-top: 27px;
+                }
+                .text_all_open{
+                    width: 20%;
+                    display: inline-block;
+                    
+                }
+                .news_text_day{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    display: inline-block;
+                    float: left;
+                    text-align: center;
+                    background-color: white;
+                    color: #EEB4B4;
+                    margin-top: 55px;
+                    width: 10%;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .new_text_day_text1{
+                    border-bottom: 4px #EEB4B4 solid;
+                    width: 100%;
+                    height: auto;
+                    font-size: 42px;
+                }
+                .new_text_day_text{
+                    width: 100%;
+                    height: auto;
+                    font-size: 42px;
+                    float: left;
+                    
+                }
+                .news_text{
+                    color: white;
+                    float: left;
+                    display: block;
+                    width: 45%;
+                    padding-left: 0px;
+                }
+                .text_all{
+                    width: 100%;
+                    height: auto;
+                    display: inline-block;
+                    padding-top: 40px;
+                    margin-top: 30px;
+                    
+                }
+                .news_text h3{
+                    padding-top: 30px;
+                    letter-spacing: 10px;
+                    
+                }
+                .news_text p{
+                    font-size: 2vmin;
+                    padding-top: 30px;
+                    width: 57%;
+                }
+                .news_text p a{
+                    font-size: 12px;
+                    float: right;
+                    padding-top: 60px;
+                    color: white;
+                    
+                }
+                /*以上banner的code*/
+                /*以下about的code*/
+                .about{
+                    font-family: 微軟正黑體,新細明體,標楷體;
+                }
+                .about_text h2{
+                    font-size: 3vmin;
+                    letter-spacing: 3px;
+                    font-weight:800;
+                }
+                .about_text_t{
+                    font-size: 2vmin;
+                    letter-spacing: 2px;
+                    padding-top: 20px;
+                }
+                .about_text_t a{
+                    font-size: 1vmin;
+                    color: black;
+                    float: left;
+                }
+                .about_text_t a:hover{
+                    color:black;
+                }
+                .about_img{
+                    background: url(image/1408692104-1230259776_n.jpg) left bottom no-repeat;
+                        min-height: 384px !important;
+                }

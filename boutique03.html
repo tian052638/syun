@@ -1,0 +1,392 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+        <!--文章的CSS-->
+            <link rel="stylesheet" href="roomin.css">
+        <!--navbar的css-->
+            <link rel="stylesheet" href="navbar.css">
+        <!---foot的CSS-->
+            <link rel="stylesheet" href="foot.css">
+        <!--以下chain的CSS-->
+        <link rel="stylesheet" href="chain.css">
+        <!--page的CSS-->
+        <link rel="stylesheet" href="page.css"> 
+        <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!--ICON的CDN-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jq的CDN -->
+            <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>    
+              
+        <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- mobile first -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!--燈箱-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/fresco/fresco.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/fresco/fresco.css" />
+        <!--資訊的JS-->
+        <script type="text/javascript" src="room.js"></script>
+        <!--banner的js-->
+            <script type="text/javascript" src="index.js"></script>  
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+            <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+
+ 
+        <!--以下js-->
+        <script type="text/javascript">
+                $(function() {
+                  $(window).scroll(function() {
+                    if ($(this).scrollTop() > 90)  {          /* 要滑動到選單的距離 */
+                       $('#Navbar').addClass('navFixed');   /* 幫選單加上固定效果 */
+                    } else {
+                      $('#Navbar').removeClass('navFixed'); /* 移除選單固定效果 */
+                    }
+                  });
+                });
+        </script>   
+</head>
+
+
+<body class="body">
+      <!--以下navbar手機板-->
+       <nav class="navbar navbar-default hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">紅樓</a>
+            </div>
+                <div class="container-fluid">         
+                <div class="collapse navbar-collapse hidden-lg" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav hidden-lg">
+                            <li class="active"><a href="news.html">最新消息</a></li>
+                            <li class="dropdown">
+                              <a href="rooms.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">房型介紹 <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="emperor1.html">帝王房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="senior2.html">頂級房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="boutique3.html">精品房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="business4.html">商務房</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="address.html">地理位置</a></li>
+                            <li><a href="buy.html">線上訂房</a></li>
+                            <li><a href="about.html">關於我們</a></li>
+                            
+                            
+                            
+                            
+                  </ul>
+                </div>
+                </div>  
+            </div>
+        </nav>
+        
+        
+        
+    <!--以下NAVBAR電腦版-->  
+        <div class="container-fluid">
+            <div class="row">
+                <div id="Navbar">
+                  <div class="col-lg-2 visible-lg"></div>
+                   <div class="Navbar_logo col-lg-2 visible-lg"><a href="index.html"><img src="image/0921-LOGO_thumb_352_115.png"></a></div>
+                    <ul class="Navbar_ul visible-lg">
+                        <li class="Navbar_li col-lg-1"><a href="news.html">最新消息</a></li>
+                        <li class="Navbar_li col-lg-1"><a class="enter Navbar_li_a" href="rooms.html">房型介紹</a>
+                            <div class="Navbar_li_ul">
+                                <a class="Navbar_li_ul_a" href="emperor1.html"><div class="Navbar_li_ul_li">帝王房</div></a>
+                                <a class="Navbar_li_ul_a" href="senior2.html"><div  class="Navbar_li_ul_li">頂級房</div></a>
+                                <a class="Navbar_li_ul_a" href="boutique3.html"><div  class="Navbar_li_ul_li">精品房</div></a>
+                                <a class="Navbar_li_ul_a" href="business4.html"><div  class="Navbar_li_ul_li">商務房</div></a>
+                            </div>
+                        </li>
+                        <li class="Navbar_li col-lg-1"><a href="address.html">地理位置</a></li>
+                        <li class="Navbar_li col-lg-1"><a href="buy.html">線上訂房</a></li>
+                        <li class="Navbar_li col-lg-1"><a href="about.html">關於我們</a></li>
+                    </ul>
+                    <div class="col-lg-3 visible-lg"></div>
+                </div>
+            </div>
+        </div>
+        
+    <!--中間的一條線-->
+        <div class="line">
+        </div>
+                                        
+        <!--以下為banner輪播的code-->
+        <div class="swiper-container" style="max-width: 1200px;height: auto;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image/11000.jpg"></div>
+                <div class="swiper-slide"><img src="image/11001.jpg"></div>
+                <div class="swiper-slide"><img src="image/11002.jpg"></div>
+            </div>
+            <!-- 如果需要導航按鈕 -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+
+    <!-- 以上為banner輪播的code-->
+    <!--前言-->
+       <div class="container-fluid">
+        <div class="row">
+             <div class="chain col-lg-12">
+              <div class="col-lg-1"></div>
+              <div class="chain_txt col-lg-8">
+                  <h1>MY ACCOMODATION</h1>
+                   <h3>房型介紹</h3>
+              </div>
+              <div class="col-lg-3"></div>
+             </div>  
+         </div>
+       </div>
+    <!--介紹-->
+       <div class="container-fluid">
+           <div class="row">
+               <div class="roomall col-lg-12">
+                    <div class="col-lg-2 visible"></div>
+                    <div class="room_in col-lg-8 col-md-12 col-xs-12">
+                        <div class="room_be col-lg-12 col-md-12 col-xs-12">
+                        <p>休閒精品房</p>
+                        </div>
+                        <!--相片-->
+                        <div class="room_af col-lg-12 col-md-12 col-xs-12">
+                           <img src="image/room/boutique3/25.jpg">
+                           <ul class="room_ul col-lg-12 col-md-12 col-xs-12">
+                               <li class="room_li">
+                                   <a href="image/room/boutique3/25.jpg" class="fresco" data-fresco-group="shared_options" data-fresco-group-options="thumbnails: 'vertical',ui:'inside'">
+                                   <img src="image/room/boutique3/25.jpg" class="room_af_img">
+                                   </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/26.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/26.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/27.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/27.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/28.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/28.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/29.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/29.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/30.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/30.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                                   <a href="image/room/boutique3/31.jpg" class="fresco" data-fresco-group="shared_options" data-fresco-group-options="thumbnails: 'vertical',ui:'inside'">
+                                   <img src="image/room/boutique3/31.jpg" class="room_af_img">
+                                   </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/32.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/32.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/33.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/33.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/34.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/34.jpg">
+                               </a>
+                               </li>
+                            </ul>
+                            <ul class="room_ul col-lg-12 col-md-12 col-xs-12">
+                               <li class="room_li">
+                               <a href="image/room/boutique3/35.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/35.jpg">
+                               </a>
+                               </li>
+                               <li class="room_li">
+                               <a href="image/room/boutique3/36.jpg" class="fresco" data-fresco-group="shared_options">
+                               <img src="image/room/boutique3/36.jpg">
+                               </a>
+                               </li>
+                            </ul>
+                            <!--相片-->
+                            <div class="roomtxt col-lg-12 col-md-12 col-xs-12">
+                                <div class="room_title col-lg-12">
+                                    <a id="room_t1">住房資訊</a>
+                                    <a id="room_t2">入住價格</a>
+                                    <a id="room_t3">住宿須知</a>
+                                </div>
+                                <ul class="room_know col-lg-12">
+                                        <li id="room_k1">
+                                            <h1>洗盡旅人的塵垢，提供給朋友居住。</h1>
+                                            <p><span class="room_pt">｜客｜房｜坪｜數｜</span>20坪大空間</p>
+                                            <p><span class="room_pt">｜客｜房｜設｜備｜</span>《淋浴花灑》,《按摩浴缸》</p>
+                                            <p><span class="room_pt">｜房｜型｜說｜明｜</span>住宿期間免費停車、無供應早餐</p>
+                                        </li>
+                                        <li id="room_k2">
+                                            <table class="room_t">
+                                               <thead>
+                                                    <tr class="room_thr">
+                                                        <th class="room_trh col-lg-4">客房型態</th>
+                                                        <th class="room_trh col-lg-4">坪數/入住人數/房型</th>
+                                                        <th class="room_trh col-lg-4">定價</th>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">憧憬單人房</td><td class="col-lg-4">4.5坪 / 1人 / 一小床</td><td class="col-lg-4">$3,800</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">熱忱雙人房</td><td class="col-lg-4">5.5坪 / 2人 / 一中床</td><td class="col-lg-4">$4,600</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">漫步經典房</td><td class="col-lg-4">7.5坪 / 2人 / 一大床</td><td class="col-lg-4">$5,600</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">漫步經典房</td><td class="col-lg-4">7.5坪 / 2人 / 兩小床</td><td class="col-lg-4">$5,600</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">漫步經典房</td><td class="col-lg-4">7.5坪 / 3人 / 一中一小床</td><td class="col-lg-4">$6,000</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">漫步經典房</td><td class="col-lg-4">7.5坪 / 4人 / 兩中床</td><td class="col-lg-4">$6,400</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">鼓舞商務房</td><td class="col-lg-4">11.5坪 / 2人 / 一大床</td><td class="col-lg-4">$7,500</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">溫馨親子房</td><td class="col-lg-4">11.5坪 / 4人 / 兩中床</td><td class="col-lg-4">$7,500</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">光景雙人套房</td><td class="col-lg-4">15坪 / 2人 / 一大床</td><td class="col-lg-4">$8,500</td>
+                                                    </tr>
+                                                    <tr class="room_thr">
+                                                        <td class="col-lg-4">光陰雙人套房</td><td class="col-lg-4">15坪 / 2人 / 一大床</td><td class="col-lg-4">$12,000</td>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                            <h1>｜平｜價｜日｜說｜明｜</h1>
+                                            <p>平日:週日至週五</p>
+                                            <p>假日:週六,國定假日、連續假期及其前夕(依人事行政局公告為主)</p>
+                                            <p>上述房價僅供參考，以飯店櫃檯公告為準</p>
+                                        </li>
+                                        <li id="room_k3">
+                                            <p class="room_ptt">｜住｜宿｜規｜範｜</p>
+                                            <ul>
+                                                <li>
+                                                    check in 時間：PM 15:00
+                                                </li>
+                                                <li>
+                                                    check out 時間：AM 12:00  
+                                                </li>
+                                                <li>
+                                                    早餐時段： AM  06:30 - 10:00
+                                                </li>
+                                                <li>
+                                                    全館客房內禁止吸菸，為確保所有旅客之住宿品質，於晚間11點過後請勿大聲喧嘩、吵鬧，敬請配合。
+                                                </li>
+                                                <li>
+                                                    館內大廳提供無線寬頻上網服務；客房內提供無線寬頻上網服務。
+                                                </li>
+                                                <li>
+                                                    為維護環境及住宿品質，暫無加床服務，禁止攜帶寵物住宿，謝謝配合。
+                                                </li>
+                                            </ul>
+                                            <p class="room_ptt">｜退｜訂｜規｜則｜</p>
+                                                <p>1.預約訂房請留下姓名、聯絡電話、訂房日期。</p>
+                                                <p>2.若訂金未能按時匯款，或未傳真匯款收據，預訂之房間將自動取消。 ﹝若有特殊情形，請以電話告知到達時間﹞</p>
+                                                <p>3.若因不可抗拒因素無法入住，請於住宿前7天前告知，可辦理訂房延期3個月內(限延期一次，之後不予保留並全額扣款)</p>
+                                                <p>4.退訂規則以住宿日期為當日起開始計算。</p>
+                                                <p>5.旅客於入住日的14天以前取消退房時，可退還訂金100%。</p>
+                                                <p>6.旅客於入住日的前10到13天以前取消退房時，可退回訂金70%。</p>
+                                                <p>7.旅客於入住日的前7到9天以前取消退房時，取消訂房可退回訂金50%或辦理3個月內的延期。</p>
+                                                <p>8.旅客於入住日的前4日到6日間取消退房時，取消訂房可退回訂金40%，無法辦理延期。</p>
+                                                <p>9.旅客於入住日的前2日到3日間取消退房時，取消訂房可退回訂金30%，前一日取消訂房可退回訂金20%, 無法辦理延期。</p>
+                                                <p>10.旅客於入住當日無法入住取消退房時，取消訂房手續費為訂金的100%，無法辦理延期。</p>
+                                                <p>11.若因颱風無法入住。(以台中市政府頒布狀況為準則)</p>
+                                                <p>12.入住當日發佈陸上颱風警報，影響台中地區造成停班、停課，可做3個月內的延期或退款訂金100%。</p>
+                                                <p>13.訂房確認後，如遇颱風或道路交通受阻等因素可延期或退還訂金。</p>
+                                                <p>*其他天候如因下雨,但道路並未中斷等原因不在此列。(依氣象預報，並於住房前三天通知飯店)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 visible-lg"></div>
+               </div>
+           </div>
+       </div>
+        
+        
+<!--以下foot的code-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="foot">
+                <div class="foot_text col-lg-4 visible-lg">
+                    <div class="foot_textin">
+                        <h2>彰化縣福興鄉橋和街62號</h2>
+                            No.62,ChiaoHuo Rd.,<br>
+                            Chunghua City 403, Taiwan (R.O.C.)<br>
+                    </div>
+                </div>
+                <div class="foot_nav_left col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                    <ul class="foot_nav_left_ul">
+                        <a href="index.html"><li>紅樓首頁</li></a>
+                        <a href="news.html"><li>最新消息</li></a>
+                        <a href="rooms.html"><li>房型介紹</li></a>
+                    </ul>
+                </div>
+                <div class="foot_nav_right col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                    <ul class="foot_nav_right_ul">
+                        <a href="address.html"><li>地理位置</li></a>
+                        <a href="buy.html"><li>線上訂房</li></a>
+                        <a href="about.html"><li>關於我們</li></a>
+                    </ul>
+                </div>
+                <div class="foot_logo col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!--以上foot的code-->
+<!--swiper-->
+        <script>        
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });   
+        </script>
+    
+</body>
+</html>
+        

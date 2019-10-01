@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+    <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--ICON的CDN-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+    <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jq的CDN -->
+            <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>    
+              
+    <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- mobile first -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+    <!--以下CSS-->
+    <style type="text/css">
+        .Navbar{
+            width: 100%;
+            height: auto;
+                
+        }
+        .Navbar_ul{
+            margin: 0;
+            font-family: 微軟正黑體,新細明體,標楷體;
+            list-style-type: none;
+                    
+        }
+        .Navbar_li{
+            font-size: 16px;
+            float: left;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 80px;
+        }
+        .Navbar_li a{
+            color: black;
+        }
+        .Navbar_li_ul{
+            list-style: none;
+            padding-left: 0;
+            display: none;
+            z-index: 99;
+            position: absolute;
+            width: 115px;
+            background-color: white;
+            margin-top: 13px;
+        }
+        .Navbar_li_ul li{
+            border-bottom: 1px #dadada solid;
+            padding: 5px;
+                    
+        }
+        .Navbar_li:hover>ul{
+            display: block;
+            z-index: 99;
+                    
+        }
+        .Navbar_li_ul_li{
+            position: relative;
+        }
+    /*以上navbar的CSS*/    
+    /*以下foot的CSS*/
+        .foot{
+            width: 100%;
+            height: auto;
+            font-family: 微軟正黑體,新細明體,標楷體;
+            background-color: #636363;
+            color: white;
+            display: inline-block;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .foot li{
+            list-style-type: none;
+            color: white;
+            font-size: 22px;
+        }
+        .foot_textin{
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+            border-right: 1px #4f4f4f solid;
+            padding-bottom: 30px;
+
+        }
+        .foot_text h2{
+            margin: 0px !important;
+        }
+        .foot_logo{
+            padding-bottom: 58px;
+            border-left: 1px #4f4f4f solid;
+                    
+        }
+        .foot_logo a{
+            color: white;
+        }
+        .foot_logo a i{
+            width: 45px;
+            font-size: 45px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+   
+   <body class="body">
+      <!--以下navbar手機板-->
+       <nav class="navbar navbar-default hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">紅樓</a>
+            </div>
+                <div class="container-fluid">         
+                <div class="collapse navbar-collapse hidden-lg" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav hidden-lg">
+                            <li class="active"><a href="news.html">最新消息</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">房型介紹 <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">帝王房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">頂級房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">精品房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">商務房</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">地理位置</a></li>
+                            <li><a href="#">線上訂房</a></li>
+                            <li><a href="#">關於我們</a></li>
+                            
+                            
+                            
+                            
+                  </ul>
+                </div>
+                </div>  
+            </div>
+        </nav>
+        
+        
+        
+    <!--以下NAVBAR電腦版-->  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="Navbar">
+                  <div class="col-lg-2 visible-lg"></div>
+                   <div class="Navbar_logo col-lg-2 visible-lg"><a href="index.html"><img src="image/0921-LOGO_thumb_352_115.png"></a></div>
+                    <ul class="Navbar_ul visible-lg">
+                        <li class="Navbar_li col-lg-1"><a href="news.html">最新消息</a></li>
+                        <li class="Navbar_li col-lg-1"><a href="#">房型介紹</a>
+                            <ul class="Navbar_li_ul">
+                                <li><a href="#"  class="Navbar_li_ul_li">帝王房</a></li>
+                                <li><a href="#"  class="Navbar_li_ul_li">頂級房</a></li>
+                                <li><a href="#"  class="Navbar_li_ul_li">精品房</a></li>
+                                <li><a href="#"  class="Navbar_li_ul_li">商務房</a></li>
+                            </ul>
+                        </li>
+                        <li class="Navbar_li col-lg-1"><a href="#">地理位置</a></li>
+                        <li class="Navbar_li col-lg-1"><a href="#">線上訂房</a></li>
+                        <li class="Navbar_li col-lg-1"><a href="#">關於我們</a></li>
+                    </ul>
+                    <div class="col-lg-3 visible-lg"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--以下foot的code-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="foot">
+                <div class="foot_text col-lg-4 visible-lg">
+                    <div class="foot_textin">
+                        <h2>彰化縣福興鄉橋和街62號</h2>
+                            No.62,ChiaoHuo Rd.,<br>
+                            Chunghua City 403, Taiwan (R.O.C.)<br>
+                    </div>
+                </div>
+                <div class="foot_nav_lift col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                    <ul>
+                        <a href="index.html"><li>紅樓首頁</li></a>
+                        <a href="news.html"><li>最新消息</li></a>
+                        <a href="#"><li>房型介紹</li></a>
+                    </ul>
+                </div>
+                <div class="foot_nav_right col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                    <ul>
+                        <a href="#"><li>地理位置</li></a>
+                        <a href="#"><li>線上訂房</li></a>
+                        <a href="#"><li>關於我們</li></a>
+                    </ul>
+                </div>
+                <div class="foot_logo col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</body>
+</html>

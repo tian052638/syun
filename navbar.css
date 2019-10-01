@@ -1,0 +1,68 @@
+                .navFixed {
+                    z-index: 10;          
+                    position: fixed;      
+                    top: 0;
+                    transition: opacity .5s ease;
+                    display: block;
+                    border-bottom: 4px #EEB4B4 solid;
+                 }
+                #Navbar{
+                    width: 100%;
+                    height: auto;   
+                    display: block;
+                    background-color: white;
+                }
+                .Navbar_ul{
+                    margin: 0;
+                    font-family: 微軟正黑體,新細明體,標楷體;
+                    list-style-type: none;
+                    
+                }
+                .Navbar_li{
+                        font-size: 2vmin;
+                        float: left;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 80px;
+                 }
+                .Navbar_li a{
+                    color: black;
+                }
+
+                .Navbar_li_ul{
+                    list-style: none;
+                    padding-left: 0;
+                    display: none;
+                    z-index: 99;
+                    position: absolute;
+                    background-color: white;
+                }           
+                .Navbar_li:hover>div{
+                    display: block;
+                    z-index: 99;
+                    transition: all 0.3s ease;
+                    
+                }
+                
+                .Navbar_li_ul_li{
+                    position: relative;
+                    border-bottom: 1px #dadada solid;
+                    padding: 8px;
+                    width: 115px;
+                }
+                /*以下navbar link跟動畫*/
+                .Navbar_li a:hover{
+                    color: #EEB4B4;
+                    transition: all 0.3s ease;
+                    text-decoration:none;
+                }
+                .Navbar_li_ul_a :hover{
+                    background-color: #EEB4B4;
+                    transition: all 0.3s ease;
+                    color: white;
+                    animation-duration:0.2S;
+                }
+                .enter{
+                    color: #EEB4B4 !important;
+
+                }

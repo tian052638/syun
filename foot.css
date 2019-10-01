@@ -1,0 +1,51 @@
+                /*以下foot的CSS*/
+
+                .foot{
+                    width: 100%;
+                    height: auto;
+                    font-family: 微軟正黑體,新細明體,標楷體;
+                    background-color: #636363;
+                    color: white;
+                    display: inline-block;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+                .foot_nav_left_ul a :hover{
+                    text-decoration:underline;
+                    color: white;
+                }
+                .foot_nav_right_ul a:hover{
+                    text-decoration:underline;
+                    color: white;
+                }
+                .foot li{
+                    list-style-type: none;
+                    color: white;
+                    font-size: 3vmin;
+                }
+                .foot_textin{
+                    width: 70%;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    border-right: 1px #4f4f4f solid;
+                    padding-bottom: 30px;
+
+                }
+                .foot_text h2{
+                    margin: 0px !important;
+                    font-size: 3vmin;
+                }
+                .foot_logo{
+                    padding-bottom: 58px;
+                    border-left: 1px #4f4f4f solid;
+                    
+                }
+                .foot_logo a{
+                    color: white;
+                }
+                .foot_logo a i{
+                    width: 45px;
+                    font-size: 5vmin;
+                    padding-left: 10px;
+                }
+                /*以上foot的CSS*/

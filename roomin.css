@@ -1,0 +1,157 @@
+.roomall{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.room_in{
+    display: inline-block;
+}
+.room_be{
+    font-size: 22px;
+    border-bottom: 1px dashed black;
+    display: inline-block;
+    padding-bottom: 20px;
+    font-family: "微軟正黑體";
+}
+.room_af{
+    padding-top: 3%;
+}
+.room_af img{
+    width: 100%;
+}
+.room_ul{
+    padding-top: 3%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.room_li{
+    list-style-type: none;
+    width: 10%;
+    float: left;
+    padding: 2px;
+}
+.room_li img{
+    width: 100%;
+}
+/*以下是資訊*/
+.roomtxt{
+    margin-top: 20px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-family: "微軟正黑體";
+}
+.room_title{
+    padding-left: 0!important;
+    padding-right: 0!important;
+    border-bottom: 2px solid #EEB4B4;
+    display: inline-block;
+    padding-bottom: 9px;
+}
+.room_tc{
+    color: white;
+    background-color: #EEB4B4;
+}
+.room_title a{
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    letter-spacing: 1px;
+}
+.room_title a:hover{
+    text-decoration: none;
+    color: black;
+}
+#room_t1{
+    background-color:#EEB4B4;
+    color: white;    
+}
+#room_t2{
+    color: black;
+}
+#room_t3{
+    color: black;
+}
+.room_know{
+    font-size: 18px;
+    padding: 24px;
+    padding-left: 0px !important;
+}
+#room_k1{
+    list-style-type: none;
+    
+}
+#room_k1 h1{
+    width: 100%;
+    font-size: 3vmin;
+    padding-left: 0px !important;
+    padding-bottom: 20px;
+}
+#room_k1 p{
+    padding: 10px;
+    font-size: 2vmin;
+}
+#room_k2{
+    list-style-type: none;
+    display: none;
+}
+#room_k3{
+    list-style-type: none;
+    display: none;
+}
+.room_t{
+    width: 100%;
+    border-collapse: collapse;
+}
+.room_thr td{
+    text-align: center;
+    border: 1px solid ghostwhite;
+    padding: 5px;
+}
+.room_thr{
+    font-size: 2vmin;
+}
+.room_trh{
+    background-color: #EEB4B4;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    padding: 13px;
+}
+.room_pt{
+    color: #EEB4B4;
+}
+#room_k2 h1{
+    color: #EEB4B4 !important;
+    font-size: 2vmin;
+    margin-bottom: 20px;
+}
+#room_k2 p{
+    font-size: 2vmin;
+    padding-left: 6px;
+}
+.room_ptt{
+    color: #EEB4B4 !important;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 0px !important;
+}
+#room_k3 ul{
+    margin-bottom: 40px;
+    list-style-type: disc;
+}
+#room_k3 li{
+    padding: 5px;
+    font-size: 2vmin;
+}
+#room_k3 p{
+    padding-left: 2px;
+    padding-left: 16px;
+    font-size: 2vmin;
+}
+.line{
+    border-bottom: 5px #EEB4B4 solid;
+    width: 100%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}

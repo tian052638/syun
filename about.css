@@ -1,0 +1,24 @@
+.textabout p{
+    font-size: 2vmin;
+    font-family: 微軟正黑體,新細明體,標楷體;
+    letter-spacing: 2px;
+    padding-bottom: 7px;
+    line-height: 2;
+}
+.about{
+    margin-bottom: 60px;
+    padding-top: 20px;
+}
+.about_img{
+    background: url(image/00.png) left bottom no-repeat;
+    min-height: 384px !important;
+    
+}
+/*以下線的code*/
+.line{
+    border-bottom: 5px #EEB4B4 solid;
+    width: 100%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}

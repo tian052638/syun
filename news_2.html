@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+        <!--navbar的css-->
+            <link rel="stylesheet" href="navbar.css">
+        <!---foot的CSS-->
+            <link rel="stylesheet" href="foot.css">
+        <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!--ICON的CDN-->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jq的CDN -->
+            <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>    
+              
+        <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- mobile first -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!--news的CSS-->
+            <link rel="stylesheet" href="news.css">
+        <!--page的CSS-->
+            <link rel="stylesheet" href="page.css">
+        <!--以下chain的CSS-->
+        <link rel="stylesheet" href="chain.css">
+        <!--banner的js-->
+            <script type="text/javascript" src="index.js"></script>  
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+            <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+
+            
+        <!--以下js-->
+        <script type="text/javascript">
+                $(function() {
+                  $(window).scroll(function() {
+                    if ($(this).scrollTop() > 90)  {          /* 要滑動到選單的距離 */
+                       $('#Navbar').addClass('navFixed');   /* 幫選單加上固定效果 */
+                    } else {
+                      $('#Navbar').removeClass('navFixed'); /* 移除選單固定效果 */
+                    }
+                  });
+                });
+        </script>  
+
+</head>
+   <body class="body">
+      <!--以下navbar手機板-->
+       <nav class="navbar navbar-default hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">紅樓</a>
+            </div>
+                <div class="container-fluid">         
+                <div class="collapse navbar-collapse hidden-lg" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav hidden-lg">
+                            <li class="active"><a href="news.html">最新消息</a></li>
+                            <li class="dropdown">
+                              <a href="rooms.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">房型介紹 <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="emperor1.html">帝王房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="senior2.html">頂級房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="boutique3.html">精品房</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="business4.html">商務房</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="address.html">地理位置</a></li>
+                            <li><a href="buy.html">線上訂房</a></li>
+                            <li><a href="about.html">關於我們</a></li>          
+                  </ul>
+                </div>
+                </div>  
+            </div>
+        </nav>
+        
+        
+        
+    <!--以下NAVBAR電腦版-->  
+        <div class="container-fluid">
+            <div class="row">
+                <div id="Navbar">
+                  <div class="col-lg-2 visible-lg"></div>
+                   <div class="Navbar_logo col-lg-2 visible-lg"><a href="index.html"><img src="image/0921-LOGO_thumb_352_115.png"></a></div>
+                    <ul class="Navbar_ul visible-lg">
+                        <li class="Navbar_li col-lg-1"><a class="enter" href="news.html">最新消息</a></li>
+                        <li class="Navbar_li col-lg-1"><a class="Navbar_li_a" href="rooms.html">房型介紹</a>
+                            <div class="Navbar_li_ul">
+                                <a class="Navbar_li_ul_a" href="emperor1.html"><div class="Navbar_li_ul_li">帝王房</div></a>
+                                <a class="Navbar_li_ul_a" href="senior2.html"><div  class="Navbar_li_ul_li">頂級房</div></a>
+                                <a class="Navbar_li_ul_a" href="boutique3.html"><div  class="Navbar_li_ul_li">精品房</div></a>
+                                <a class="Navbar_li_ul_a" href="business4.html"><div  class="Navbar_li_ul_li">商務房</div></a>
+                            </div>
+                        </li>
+                        <li class="Navbar_li col-lg-1"><a href="address.html">地理位置</a></li>
+                        <li class="Navbar_li col-lg-1"><a href="buy.html">線上訂房</a></li>
+                        <li class="Navbar_li col-lg-1"><a href="about.html">關於我們</a></li>
+                    </ul>
+                    <div class="col-lg-3 visible-lg"></div>
+                </div>
+            </div>
+        </div>
+        
+    <!--中間的一條線-->
+        <div class="line">
+        </div>
+                                        
+        <!--以下為banner輪播的code-->
+        <div class="swiper-container" style="max-width: 1200px;height: auto;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image/11000.jpg"></div>
+                <div class="swiper-slide"><img src="image/11001.jpg"></div>
+                <div class="swiper-slide"><img src="image/11002.jpg"></div>
+            </div>
+            <!-- 如果需要導航按鈕 -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+
+    <!-- 以上為banner輪播的code-->
+    <!--前言-->
+       <div class="container-fluid">
+        <div class="row">
+             <div class="chain col-lg-12">
+              <div class="col-lg-1"></div>
+              <div class="chain_txt col-lg-8">
+                  <h1>WHAT'S NEWS</h1>
+                   <h3>最新消息</h3>
+              </div>
+              <div class="col-lg-3"></div>
+             </div>
+         </div>  
+       </div>
+        
+    <!--以下news-->
+       <div class="container-fluid">
+           <div class="row">
+                        <div class="news">
+                            <div class="news_txt col-lg-8">
+                                <div class="news_class col-lg-12">
+                                   <div class="news_block col-lg-4"></div>
+                                    <a class="newsa2" href="news.html"><div class="news_atxt2 col-lg-2 col-md-12 col-xs-12">所有消息</div></a>
+                                    <a class="newsa1" href="news_2.html"><div  class="news_atxt1 col-lg-2 col-md-12 col-xs-12">官方公告</div></a>
+                                    <a class="newsa2" href="news_3.html"><div  class="news_atxt3 col-lg-2 col-md-12 col-xs-12">活動新訊</div></a>
+                                    <div class="news_block col-lg-2"></div>
+                                </div>
+                                <div class="news_days col-lg-12">
+                                    <div class="news_dayblock col-lg-3"></div>
+                                    <div class="news_all col-lg-9">
+                                        <div class="news_day_1">                                            
+                                            <div class="news_day_img"><a href="#"><img src="image/room.jpg"></a></div>
+                                            <div class="news_daytxt">
+                                                <h5><i class="fa fa-clock-o" aria-hidden="true"></i>31.Aug.2017</h5>
+                                                <a href="#"><p>企業官網上線</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news_about col-lg-4">
+                                <h3><i class="fa fa-map-marker" aria-hidden="true"></i>彰化縣福興鄉橋和街62號</h3>
+                                <h3><i class="fa fa-envelope-o" aria-hidden="true"></i>asdfg524738@server.com</h3>
+                                <h3><i class="fa fa-phone-square" aria-hidden="true"></i>+886-4-7894-5678</h3>
+                            </div>
+                        </div>
+           </div>
+       </div>
+    <!--以下foot的code-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="foot">
+                <div class="foot_text col-lg-4 visible-lg">
+                    <div class="foot_textin">
+                        <h2>彰化縣福興鄉橋和街62號</h2>
+                            No.62,ChiaoHuo Rd.,<br>
+                            Chunghua City 403, Taiwan (R.O.C.)<br>
+                    </div>
+                </div>
+                <div class="foot_nav_left col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                    <ul class="foot_nav_left_ul">
+                        <a href="index.html"><li>紅樓首頁</li></a>
+                        <a href="news.html"><li>最新消息</li></a>
+                        <a href="rooms.html"><li>房型介紹</li></a>
+                    </ul>
+                </div>
+                <div class="foot_nav_right col-lg-2 col-md-3 col-sm-3 col-xs-3">
+                    <ul class="foot_nav_right_ul">
+                        <a href="address.html"><li>地理位置</li></a>
+                        <a href="buy.html"><li>線上訂房</li></a>
+                        <a href="about.html"><li>關於我們</li></a>
+                    </ul>
+                </div>
+                <div class="foot_logo col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!--以上foot的code-->
+    <!--swiper-->
+            <script>        
+                var swiper = new Swiper('.swiper-container', {
+                    spaceBetween: 30,
+                  centeredSlides: true,
+                  autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  },
+                    navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                });   
+            </script>
+</body>
+</html>
